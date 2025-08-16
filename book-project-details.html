@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Adarsh R Shenoy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/Adarsh_bg[prof].png" rel="icon">
@@ -24,22 +26,20 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
-<body class="index-page">
+<body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Adarsh R Shenoy</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Projects</a></li>
@@ -54,23 +54,76 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/Adarsh_bg[prof].png" alt="" data-aos="fade-in">
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Adarsh R Shenoy</h2>
-        <p>I'm <span class="typed" data-typed-items="Robotics Engineer, AI Engineer, MSFS Pilot, Programmer"></span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <div class="social-links">
-          <a href="https://github.com/ar-shenoy?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/ar-shenoy/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/ar_shenoy/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.snapchat.com/add/ar_shenoy/" target="_blank"><i class="bi bi-snapchat"></i></a>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Book Store</h1>
+            </div>
+          </div>
         </div>
       </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">projects</a></li>
+            <li class="current">Project Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
 
-    </section><!-- /Hero Section -->
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <p>🚧 This project is still under development. Core structure has been set up, and key features like browsing books, user login, cart system, and checkout flow are in progress.</p>
+            </div>
+
+            <h4>Github</h4>
+            <p><a href="https://github.com/ar-shenoy/Book-store" target="_blank">Book Store</a></p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/book_store/Book_store_Home.jpeg" alt="" class="img-fluid services-img">
+            <h3>Book Store</h3>
+            <p>
+              This is an ongoing project for building a full-featured online book store. The goal is to create a modern, user-friendly web platform for browsing, searching, and purchasing books. The project is designed to be scalable and production-ready, with separate front-end and back-end components.
+            </p>
+
+            <h3>Features (Planned and In Progress)</h3>
+            <li>User registration and login system</li>
+            <li>Book listing and pagination</li>
+            <li>Book search functionality</li>
+            <li>Add to cart and remove from cart</li>
+            <li>Checkout system (multi-book and single book support)</li>
+            <li>Favorites/Wishlist system</li>
+            <li>Admin panel for book management</li>
+            <li>Order history and user dashboard</li>
+            <ul>
+              <br>
+              <h3>What's Next</h3>
+              <li><i class="bi bi-check-circle"></i> <span>Connect front-end to Flask server</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Add database integration (SQLite or PostgreSQL)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Improve responsive design and UI</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Implement secure authentication</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Add deployment pipeline</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
 
   </main>
 

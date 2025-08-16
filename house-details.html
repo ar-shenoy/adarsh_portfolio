@@ -28,13 +28,12 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="contact-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Adarsh R Shenoy</h1>
       </a>
 
@@ -45,7 +44,7 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Projects</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,8 +60,9 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Contact</h1>
-              <p class="mb-0">Feel free to contact me</p>
+              <h1>House Price Prediction System - Details</h1>
+              <p class="mb-0">A collection of my AI, machine learning, and web development projects — each one built with a focus on solving real problems.
+Click on any project to explore the live demo and see it in action</p>
             </div>
           </div>
         </div>
@@ -71,71 +71,78 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Chaithanya, Majoor, Kaup</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Phone</h3>
-                <p><a href="tel:+918762867396">+91 8762867396</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:adarshrshenoy1@gmail.com">adarshrshenoy1@gmail.com</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Social Profiles</h3>
-                <div class="social-links">
-                  <a href="https://github.com/ar-shenoy?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ar-shenoy/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/ar_shenoy/" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.snapchat.com/add/ar_shenoy/" target="_blank"><i class="bi bi-snapchat"></i></a>
+              <div class="swiper-wrapper align-items-center">
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/House_price/house_price_logo.png" alt="">
                 </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/House_price/House_price_banglore.png" alt="">
+                </div>
+
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-          </div><!-- End Info Item -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: AI/ML</li>
+                <li><strong>Project focus</strong>: Real estate</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/ar-shenoy/House_price_prediction" target="_blank">House Price prediction system</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>House Price Prediction (Bangalore)</h2>
+              <p>
+                This project predicts house prices in Bangalore using machine learning. A web application is built using HTML, CSS, JavaScript, and Flask to make it interactive and production-ready. The backend is powered by a Linear Regression model trained on the Bangalore housing dataset, with an accuracy of 84%-86%.
+              </p>
+            </div>
+          </div>
 
         </div>
+
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

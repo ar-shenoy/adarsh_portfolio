@@ -28,13 +28,12 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="contact-page">
+<body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Adarsh R Shenoy</h1>
       </a>
 
@@ -45,7 +44,7 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Projects</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,8 +60,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Contact</h1>
-              <p class="mb-0">Feel free to contact me</p>
+              <h1>🌙 LunarisAI</h1>
             </div>
           </div>
         </div>
@@ -71,68 +69,83 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="services.html">projects</a></li>
+            <li class="current">Project Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Chaithanya, Majoor, Kaup</p>
-              </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <h3>Model Input Features</h3>
+              <li>Average Cycle Length (days)</li>
+              <li>Period Length (days)</li>
+              <li>Age</li>
+              <li>Stress Level (scale 1–10)</li>
+              <li>BMI</li>
+              <li>Symptoms</li>
+              <li>Birth Control (Yes/No)</li>
+              <li>PCOS (Yes/No)</li>
             </div>
-          </div><!-- End Info Item -->
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Phone</h3>
-                <p><a href="tel:+918762867396">+91 8762867396</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+            <h4>Github</h4>
+            <p><a href="https://github.com/ar-shenoy/LunarisAI" target="_blank">LunarisAI</a></p>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:adarshrshenoy1@gmail.com">adarshrshenoy1@gmail.com</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+            <h4>Live Demo</h4>
+            <p><a href="https://lunarisai.streamlit.app/" target="_blank"">LunarisAI</a></p>
+          </div>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Social Profiles</h3>
-                <div class="social-links">
-                  <a href="https://github.com/ar-shenoy?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ar-shenoy/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/ar_shenoy/" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.snapchat.com/add/ar_shenoy/" target="_blank"><i class="bi bi-snapchat"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/lunarisAI/lunaris_logo.png" alt="" class="img-fluid services-img">
+            <h3>🌙 LunarisAI</h3>
+            <p>
+              LunarisAI is a personalized period prediction assistant powered by Machine Learning.
+It estimates the next menstrual cycle start date using user health and cycle inputs with uncertainty awareness.
+Built with Random Forest Regression, and deployed via Streamlit, LunarisAI adapts predictions based on factors like PCOS, stress, and birth control usage.
+            </p>
+
+            <h3>Features</h3>
+            <li><b>ML Model</b>: RandomForestRegressor with preprocessing pipeline</li>
+            <li><b>Predicts</b>: Number of days until next period + predicted calendar date</li>
+            <li><b>Uncertainty Window</b>: Adjusts based on cycle regularity, PCOS, stress, etc.</li>
+            <li><b>Web App</b>: Streamlit interface with full prediction and feedback loop</li>
+            <li><b>Explainability</b>: SHAP beeswarm plots for feature impact visualization</li>
+            <li><b>Smart Alerts</b>: Flags post-menopausal inconsistencies, high-stress cases, abnormal outputs</li>
+
+           
+            <ul>
+              <br>
+              <h3>Model Output</h3>
+              <li><i class="bi bi-check-circle"></i> <span>Predicted days until next period</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Predicted next period date (calendar)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Uncertainty range</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Optional error comparison if user inputs expected date</span></li>
+            </ul>
+            <h3>Data & Ethics</h3>
+            <p>
+              LunarisAI is trained on synthetic data and does not store any user inputs.
+            </p>
+              <li>
+                The dataset is synthetically generated using ChatGPT, While building Lunaris I've added noise and variability to simulate real-world menstrual cycle patterns.
+              </li>
+              <li>This is not a clinical tool. For real concerns, consult a gynecologist.</li>
+              <li>No personal data is logged or saved.</li>
+              <li>Predictions are made locally per session.</li>
+          </div>
 
         </div>
+
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Service Details Section -->
 
   </main>
 

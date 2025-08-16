@@ -28,13 +28,12 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="contact-page">
+<body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Adarsh R Shenoy</h1>
       </a>
 
@@ -45,7 +44,7 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Projects</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,8 +60,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Contact</h1>
-              <p class="mb-0">Feel free to contact me</p>
+              <h1>AI-NPC Interaction Engine</h1>
             </div>
           </div>
         </div>
@@ -71,68 +69,70 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="services.html">projects</a></li>
+            <li class="current">Project Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Chaithanya, Majoor, Kaup</p>
-              </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <h3>Model Input Features</h3>
+              <li>AI Dialogue Handling</li>
+              <li>Emotion-Based Behavior</li>
+              <li>Hero vs Villain Battles</li>
+              <li>Custom NPC Loading</li>
+              <li>Intent Classification Model</li>
+              <li>Self-contained Testing Suite</li>
             </div>
-          </div><!-- End Info Item -->
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Phone</h3>
-                <p><a href="tel:+918762867396">+91 8762867396</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+            <h4>Github</h4>
+            <p><a href="https://github.com/ar-shenoy/AI-NPC-Interaction-Engine" target="_blank">AI-NPC Interaction Engine</a></p>
+          </div>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:adarshrshenoy1@gmail.com">adarshrshenoy1@gmail.com</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/npc/npc_output.png" alt="" class="img-fluid services-img">
+            <h3>AI-NPC Interaction Engine</h3>
+            <p>
+              A modular Python engine simulating intelligent NPC interactions using OOP and ML.This prototype is built within 48 hrs to demonstrate interest and capabilities for Scopely's AI Intern role.Integrates intent classification, emotion-aware responses, and battle mechanics.
+            </p>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Social Profiles</h3>
-                <div class="social-links">
-                  <a href="https://github.com/ar-shenoy?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ar-shenoy/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/ar_shenoy/" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.snapchat.com/add/ar_shenoy/" target="_blank"><i class="bi bi-snapchat"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+            <h3>Features</h3>
+            <li><b>AI Dialogue Handling</b>: NPCs interpret player messages using ML-based intent recognition.</li>
+            <li><b>Emotion-Based Behavior</b>: Characters adjust combat and responses based on mood.</li>
+            <li><b>Hero vs Villain Battles</b>: Turn-based battle simulation with healing, damage scaling, and emotion dynamics.</li>
+            <li><b>Custom NPC Loading</b>: Load detailed NPCs from Parquet files with mood, responses, and biography.</li>
+            <li><b>Intent Classification Model </b>: Trained using TF-IDF + Logistic Regression for simple NLP-based predictions.</li>
+            <li><b>Self-contained Testing Suite</b>: Simulated scenarios in `main.py` to validate character behavior and intent handling.</li>
+
+           
+            <ul>
+              <br>
+              <h3>Simulate AI Behavior</h3>
+              <li><i class="bi bi-check-circle"></i> <span>ML-only intent classification</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Hero vs Villain battle simulation</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>NPC creation with emotion-based response</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Intent-driven NPC conversation</span></li>
+            </ul>
+            <h3>Limitations</h3>
+            <p>
+              Current intent classifier(ML model) achieves ~59% accuracy due to limited dataset quality and size. With improved data, model performance and AI-NPC realism can significantly increase.
+            </p>
+          </div>
 
         </div>
+
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Service Details Section -->
 
   </main>
 

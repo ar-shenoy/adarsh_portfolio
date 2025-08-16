@@ -28,7 +28,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -60,11 +60,9 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>🌙 LunarisAI</h1>
-              <p class="mb-0">LunarisAI is a personalized period prediction assistant powered by Machine Learning.
-It estimates the next menstrual cycle start date using user health and cycle inputs with uncertainty awareness.
-Built with Random Forest Regression, and deployed via Streamlit, LunarisAI adapts predictions based on factors like PCOS, stress, and birth control usage.
-              </p>
+              <h1>Book Store - Details</h1>
+              <p class="mb-0">A collection of my AI, machine learning, and web development projects — each one built with a focus on solving real problems.
+Click on any project to explore the live demo and see it in action</p>
             </div>
           </div>
         </div>
@@ -73,61 +71,91 @@ Built with Random Forest Regression, and deployed via Streamlit, LunarisAI adapt
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Project Details</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <p>AI</p>
-              <p>Healthcare</p>
-              <p>ML model</p>
-              <p>Real-world</p>
-              <p>Ready for further development</p>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/book_store/Book_store_Home.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/book_store/Book store Login.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/book_store/Book_store_cart.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/book_store/Book_store_info.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <h4>Github</h4>
-            <p><a href="https://github.com/ar-shenoy/LunarisAI">LunarisAI</a></p>
-
-            <h4>Live Demo</h4>
-            <p><a href="https://lunarisai.streamlit.app/">LunarisAI</a></p>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/portfolio/art10.jpg" alt="" class="img-fluid services-img">
-            <h3>🌙 LunarisAI</h3>
-            <p>
-              LunarisAI is a personalized period prediction assistant powered by Machine Learning.
-It estimates the next menstrual cycle start date using user health and cycle inputs with uncertainty awareness.
-Built with Random Forest Regression, and deployed via Streamlit, LunarisAI adapts predictions based on factors like PCOS, stress, and birth control usage.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>AI in Healthcare</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>ML Model</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Real-world project</span></li>
-            </ul>
-            <p>
-              LunarisAI – An intelligent AI-powered web application designed to assist with natural language queries, automate tasks, and deliver context-aware insights in real time
-            </p>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Other</li>
+                <li><strong>Project area</strong>: Full stack website</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/ar-shenoy/Book-store" target="_blank">Book store</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Book store</h2>
+              <p>
+                This is a full-stack development project currently under development. Aim is to build a 
+fully functional book store website with new features.
+              </p>
+              <p>
+                Current Status: <br>
+This project is still under development. Core structure has been set up, and key features like browsing books, user login, cart system, and checkout flow are in progress.
+              </p>
+            </div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Service Details Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

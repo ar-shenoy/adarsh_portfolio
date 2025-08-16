@@ -28,13 +28,12 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="contact-page">
+<body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Adarsh R Shenoy</h1>
       </a>
 
@@ -45,7 +44,7 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Projects</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,8 +60,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Contact</h1>
-              <p class="mb-0">Feel free to contact me</p>
+              <h1>Flight Customer Satisfaction System</h1>
             </div>
           </div>
         </div>
@@ -71,68 +69,71 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="services.html">projects</a></li>
+            <li class="current">Project Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Chaithanya, Majoor, Kaup</p>
-              </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <h3>Model Input Features</h3>
+              <li>Gender</li>
+              <li>Age</li>
+              <li>Customer Type (e.g., Loyal, Disloyal)</li>
+              <li>Type of Travel (Business, Personal)</li>
+              <li>Class (Economy, Business, etc.)</li>
+              <li>Flight Distance</li>
+              <li>Departure and Arrival Delays</li>
+              <li>In-flight Services (e.g., Wi-Fi, Entertainment)</li>
+              <li>Onboard Services (e.g., Food, Cleanliness)</li>
+              <li>Overall Satisfaction</li>
             </div>
-          </div><!-- End Info Item -->
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Phone</h3>
-                <p><a href="tel:+918762867396">+91 8762867396</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+            <h4>Github</h4>
+            <p><a href="https://github.com/ar-shenoy/Flight-Customer-Satisfaction-Prediction" target="_blank">Flight Customer Satisfaction System</a></p>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:adarshrshenoy1@gmail.com">adarshrshenoy1@gmail.com</a></p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          </div>
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Social Profiles</h3>
-                <div class="social-links">
-                  <a href="https://github.com/ar-shenoy?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ar-shenoy/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/ar_shenoy/" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.snapchat.com/add/ar_shenoy/" target="_blank"><i class="bi bi-snapchat"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/flight_satisfaction/Flight_customer_prediction.png" alt="" class="img-fluid services-img">
+            <h3>Flight Customer Satisfaction System</h3>
+            <p>
+              This project aims to predict airline passenger satisfaction using machine learning techniques. By analyzing various factors related to flight experiences, the model determines whether a passenger is likely to be satisfied or not. This analysis can help airlines enhance their services and improve customer experiences.
+            </p>
+
+            <h3>Approach</h3>
+            <li><b>Data Preprocessing</b>: Handled missing values, encoded categorical variables, and normalized numerical features.</li>
+            <li><b>Exploratory Data Analysis (EDA)</b>:  Identified patterns and correlations between features and satisfaction levels.</li>
+            <li><b>Model Selection</b>:  Evaluated Logistic Regression classification algorithm.</li>
+            <li><b>Model Evaluation</b>: Assessed models using metrics such as accuracy, precision, recall, and F1-score.</li>
+
+            <ul>
+              <br>
+              <h3>Results</h3>
+              <li><i class="bi bi-check-circle"></i> <span>The Logistic Regression model achieved the highest accuracy OF 78 to 80%, indicating its effectiveness in predicting passenger satisfaction based on the provided features.</span></li>
+            </ul>
+            <h3>Project Highlights</h3>
+            <li>
+              Insights into how different services and delays impact overall satisfaction            </li>
+            <li>
+              Heatmap to understand key factors affecting passenger satisfaction
+            </li>
+          </div>
 
         </div>
+
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Service Details Section -->
 
   </main>
 
