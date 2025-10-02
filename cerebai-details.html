@@ -28,7 +28,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -60,7 +60,9 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>cerebAI</h1>
+              <h1>cerebAI - Details</h1>
+              <p class="mb-0">A collection of my AI, machine learning, and web development projects — each one built with a focus on solving real problems.
+Click on any project to explore the live demo and see it in action</p>
             </div>
           </div>
         </div>
@@ -69,57 +71,86 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">projects</a></li>
-            <li class="current">Project Details</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <h4>Github</h4>
-            <p><a href="https://github.com/ar-shenoy/cerebAI" target="_blank">cerebAI</a></p>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-            <h4>Live Demo</h4>
-            <p><a href="https://huggingface.co/spaces/arshenoy/cerebAI" target="_blank"">cerebAI</a></p>
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/cerebAI/cerebAI_logo.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/cerebAI/cerebai_output.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/cerebAI/cerebai_input.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/cerebAI/cerebai_performance_metrics.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/cerebAI/cerebAI_logo.png" alt="" class="img-fluid services-img">
-            <h3>cerebAI</h3>
-            <p>
-              CerebAI is a deep learning application designed to assist medical professionals by rapidly classifying CT scan images for the presence and type of stroke. Built on the advanced ConvNeXt architecture, the system provides a robust diagnosis coupled with a critical eXplainable AI (XAI) feature, ensuring predictions are transparent and medically intuitive.
-              <pre>
-This project showcases high-performance multiclass classification and deployment readiness.
-              </pre>
-              <h3>Key Technical Achievements</h3>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Healthcare</li>
+                <li><strong>Project date</strong>: 1 Oct 2025</li>
+                <li><strong>Project URL</strong>: <a href="https://huggingface.co/spaces/arshenoy/cerebAI" target="_blank">cerebAI</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>cerebAI</h2>
               <p>
-                <img src="assets\img\cerebAI\cerebAI_matrics.png" alt="performance metrics">
+                CerebAI is a deep learning application designed to assist medical professionals by rapidly classifying CT scan images for the presence and type of stroke. Built on the advanced ConvNeXt architecture, the system provides a robust diagnosis coupled with a critical eXplainable AI (XAI) feature, ensuring predictions are transparent and medically intuitive.
               </p>
-            </p>
-
-            <h3>Interpretability (XAI Feature)</h3>
-            <pre>The system uses Integrated Gradients (IG) from the Captum library to generate a heatmap overlay.</pre>
-            <li><b>Function</b>:  IG highlights the specific pixels that most strongly influence the model's final diagnosis.</li>
-            <li><b>Clinical Value</b>:This visual evidence helps doctors verify the prediction by confirming the model is focusing on the actual pathology (the stroke region) and not on noise or artifacts.</li>
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Service Details Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
